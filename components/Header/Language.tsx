@@ -14,7 +14,7 @@ function Language() {
                <SelectValue placeholder="en" />
             </SelectTrigger>
             <SelectContent>
-               <SelectItem value="en">en</SelectItem>
+               <SelectItem value="en" disabled={true}>en</SelectItem>
             </SelectContent>
          </Select>
       </div>

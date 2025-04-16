@@ -1,8 +1,24 @@
-import React from 'react'
 
-function Menu() {
+
+type MenuProps = {
+   isOpen: boolean,
+   toggle: () => void
+}
+
+
+function Menu({ isOpen, toggle }: MenuProps) {
    return (
-      <div className="md:hidden">Menu</div>
+      <>
+         <button
+            onClick={toggle}
+            className="absolute md:hidden flex items-center gap-2 text-orange-primary cursor-pointer">
+            Menu
+            {isOpen ? "X" : "="}
+         </button>
+         <div>
+
+         </div>
+      </>
    )
 }
 

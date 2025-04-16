@@ -6,7 +6,7 @@
 @theme inline {
    --color-background-grey: #F6F6F6;
    --color-background-footer:#191919;
-   --color-grey: #A1A1A1;
+   --color-grey: hsla(0, 0%, 96%, .9);
    --color-black-primary: #000000;
    --color-black-secondary: #191919;
    --color-orange-primary: #fe5616;
@@ -132,4 +132,5 @@ body {
     @apply bg-background text-foreground;
    }
 }
+
 
