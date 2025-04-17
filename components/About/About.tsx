@@ -6,7 +6,7 @@ import CircleImage from "./CircleImage"
 
 function About() {
    return (
-      <section className='px-[20px] md:px-[40px] bg-grey rounded-3xl pt-[43.5px] pb-[35px] relative'>
+      <section id="about" className='px-[20px] md:px-[40px] bg-grey rounded-3xl pt-[43.5px] pb-[35px] relative'>
          <CircleImage />
          <CirclesImage />
 

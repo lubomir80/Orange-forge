@@ -157,3 +157,11 @@ body {
    height: 5px !important; /* or add it to the track */
  }
 
+
+ .header-orange {
+   font-weight: bold;
+   background: linear-gradient(to right, rgba(255, 53, 43, 1), rgba(252, 101, 30, 1));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
