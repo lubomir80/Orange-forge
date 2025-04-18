@@ -14,6 +14,13 @@ import Volvo1 from "@/public/Projects/1.Volvo/1volvo.jpg"
 import Volvo2 from "@/public/Projects/1.Volvo/2volvo.jpg"
 import Volvo3 from "@/public/Projects/1.Volvo/3volvo.png"
 
+// Partner logos
+import Logo1 from "@/public/Contact/logo1.png"
+import Logo2 from "@/public/Contact/logo2.png"
+import Logo3 from "@/public/Contact/logo3.png"
+import Logo4 from "@/public/Contact/logo4.png"
+import Logo5 from "@/public/Contact/logo5.png"
+
 
 export const projectList = [
    {
@@ -89,3 +96,12 @@ export const projectList = [
       tags: ["chatbot", "e-commerce", "smc"]
    }
 ];
+
+export const partnerLogos = [
+   Logo1,
+   Logo2,
+   Logo3,
+   Logo4,
+   Logo5,
+];
+

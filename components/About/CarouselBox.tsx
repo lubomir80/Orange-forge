@@ -2,13 +2,11 @@
 
 import 'swiper/css';
 import 'swiper/css/scrollbar';
+import { ReactElement, SVGProps } from 'react';
 import { Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CarouselItem from './CarouselItem';
 
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
-import { ComponentType, ReactElement, SVGProps } from 'react';
-import Image from 'next/image';
 import Doc from './Icons/Doc';
 import World from './Icons/World';
 import Phone from './Icons/Phone';
@@ -16,13 +14,6 @@ import Pencil from './Icons/Pencil';
 import Monitor from './Icons/Monitor';
 
 
-type SvgImageProps = {
-   src: string;
-   height: number;
-   width: number;
-   blurWidth: number;
-   blurHeight: number;
-};
 
 
 type ServiceItem = {

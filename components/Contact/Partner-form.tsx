@@ -33,23 +33,27 @@ function PartnerForm() {
 
    return (
       <Form {...form}>
-         <form onSubmit={form.handleSubmit(onSubmit)}>
-            <FormField
-               control={form.control}
-               name="email"
-               render={({ field }) => (
-                  <FormItem className="relative">
-                     <FormControl>
-                        <Input
-                           className=""
-                           placeholder="Your email"
-                           {...field}
-                           type="email" />
-                     </FormControl>
-                     <FormMessage />
-                  </FormItem>
-               )}
-            />
+         <form onSubmit={form.handleSubmit(onSubmit)}
+            className=' flex flex-col gap-10 items-center max-w-[480px] md:flex-row'>
+            <div className='w-full relative'>
+               <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                     <FormItem className="relative">
+                        <FormControl>
+                           <Input
+                              placeholder='Your Email'
+
+                              {...field}
+                              type="email"
+                              id="email" />
+                        </FormControl>
+                        <FormMessage />
+                     </FormItem>
+                  )}
+               />
+            </div>
             <Button variant="circle" size="circle">Submit</Button>
          </form>
       </Form>

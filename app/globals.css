@@ -166,3 +166,17 @@ body {
    -webkit-text-fill-color: transparent;
  }
 
+
+
+ @keyframes scroll-left {
+   0% {
+     transform: translateX(0);
+   }
+   100% {
+     transform: translateX(-300%);
+   }
+ }
+ 
+ .animate-scroll {
+   animation: scroll-left 40s linear infinite;
+ }
