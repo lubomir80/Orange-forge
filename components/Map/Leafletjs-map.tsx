@@ -33,7 +33,7 @@ function LeafletjsMap() {
          <MapContainer
             style={{ height: "100%", width: "100%", position: "relative" }}
             center={[51.505, 10]}
-            zoom={5}
+            zoom={4}
             scrollWheelZoom={true}>
             <TileLayer
                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
