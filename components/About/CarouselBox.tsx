@@ -52,8 +52,8 @@ function CarouselBox() {
                spaceBetween={18}
                modules={[Scrollbar]}
             >
-               {carouselItems.map((item) =>
-                  <SwiperSlide>
+               {carouselItems.map((item, index) =>
+                  <SwiperSlide key={item.title + index}>
                      <CarouselItem item={item} />
                   </SwiperSlide>)}
             </Swiper>
