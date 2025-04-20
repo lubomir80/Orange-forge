@@ -108,7 +108,7 @@ function FooterForm() {
                      )}
                   />
                </div>
-               <Button className='rounded-full'>Hire Us</Button>
+               <Button className='rounded-full '>Hire Us</Button>
             </form>
          </Form>
       </div>

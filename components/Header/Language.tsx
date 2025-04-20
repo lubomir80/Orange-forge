@@ -6,9 +6,9 @@ import {
    SelectValue,
 } from "@/components/ui/select"
 
-function Language() {
+function Language({ className }: { className?: string }) {
    return (
-      <div className="absolute right-[40px]">
+      <div className={className}>
          <Select>
             <SelectTrigger className="w-[70px]">
                <SelectValue placeholder="en" />

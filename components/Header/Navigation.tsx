@@ -2,9 +2,9 @@ import Link from "next/link";
 
 
 const navLinks = [
-   { name: "About", href: "/#about" },
-   { name: "Works", href: "/#works" },
-   { name: "Contact", href: "/#contact" },
+   ["About", "/#about"],
+   ["Works", "/#works"],
+   ["Contact", "/#contact"]
 ];
 
 
@@ -12,10 +12,10 @@ function Navigation() {
    return (
       <nav className="ml-[9vw]">
          <ul className="flex space-x-6">
-            {navLinks.map((link, index) => (
+            {navLinks.map(([name, href], index) => (
                <li key={index}>
-                  <Link href={link.href} className="hover:text-orange-primary transition">
-                     {link.name}
+                  <Link href={href} className="hover:text-orange-primary transition">
+                     {name}
                   </Link>
                </li>
             ))}
