@@ -30,7 +30,11 @@ function Header() {
 
 
    useMotionValueEvent(scrollY, "change", (y) => {
-      y < 50 ? setIsTransparent(true) : setIsTransparent(false)
+      if (y < 50) {
+         setIsTransparent(true)
+      } else {
+         setIsTransparent(false)
+      }
 
       const difference = y - lastYRef.current
       if (Math.abs(difference) > 50) {
@@ -45,9 +49,9 @@ function Header() {
 
 
    useEffect(() => {
-      isOpen ?
-         document.body.style.overflow = "hidden" :
-         document.body.style.overflow = "auto"
+      if (isOpen) document.body.style.overflow = "hidden"
+      if (!isOpen) document.body.style.overflow = "auto"
+
    }, [isOpen, setIsOpen])
 
 
