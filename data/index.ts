@@ -39,7 +39,11 @@ export const projectList = [
          "NovaUI was designed to bridge the gap between design systems and flexible frontend development. With prebuilt components and dynamic theming, it empowers teams to launch interfaces quickly while maintaining brand consistency. Developers can customize layouts and behavior with minimal overhead thanks to its plugin-friendly structure.",
          "The project has been adopted by several startups and is maintained by a growing open-source community. NovaUI’s roadmap includes support for dark mode theming, internationalization, and integration with popular headless CMS platforms. It’s a go-to choice for teams who want power and simplicity in one stack."
       ],
-      tags: ["UI/UX Design", "website", "cms"]
+      tags: ["UI/UX Design", "website", "cms"],
+      services: [
+         { number: 15, symbol: "+", des: "years of expertise" },
+         { number: 15, symbol: "+", des: "years of expertise" },
+      ]
    },
    {
       name: "EchoAPI",
@@ -57,7 +61,11 @@ export const projectList = [
          "EchoAPI was created with backend scalability and developer velocity at its core. It provides a CLI tool and dashboard for managing endpoints, handling authentication, and monitoring performance. The system supports REST and GraphQL out of the box and is fully container-ready.",
          "It has been integrated in logistics, e-commerce, and finance applications, and provides SDKs for JavaScript, Python, and Go. EchoAPI also includes real-time logs, webhook integrations, and auto-generated documentation. Whether you're a solo dev or a team of ten, EchoAPI fits right in."
       ],
-      tags: ["cms", "chatbot", "e-commerce"]
+      tags: ["cms", "chatbot", "e-commerce"],
+      services: [
+         { number: 50, symbol: "+", des: "projects delivered" },
+         { number: 50, symbol: "+", des: "projects delivered" },
+      ]
    },
    {
       name: "PixelBloom",
@@ -75,7 +83,11 @@ export const projectList = [
          "PixelBloom was crafted to simplify how teams build product design systems. It includes accessible color palettes, typography systems, mobile-first layouts, and hundreds of prebuilt components. It’s especially useful in fast-moving teams that want to avoid design inconsistencies across platforms.",
          "Designers can collaborate in real-time and ship designs directly to dev handoff tools. PixelBloom evolves with community feedback and features frequent updates to reflect current UI trends. Whether you’re redesigning a SaaS dashboard or launching a mobile app MVP, PixelBloom gets you there faster."
       ],
-      tags: ["UI/UX Design", "smc", "website"]
+      tags: ["UI/UX Design", "smc", "website"],
+      services: [
+         { number: 15, symbol: "%", des: "clients who returned to us for additional services" },
+         { number: 15, symbol: "%", des: "clients who returned to us for additional services" }
+      ]
    },
    {
       name: "StackNomad",
@@ -93,8 +105,12 @@ export const projectList = [
          "StackNomad includes everything a full-stack developer needs: Next.js for the frontend, Express or Fastify for the backend, PostgreSQL integration, and a fully dockerized setup. It supports user authentication, REST/GraphQL APIs, CI/CD pipelines, and environment-based config handling out of the box.",
          "The stack has been field-tested by indie hackers and growing startups alike. It reduces the boilerplate barrier so developers can focus on features, not setup. With clear docs and a community Discord, StackNomad is ideal for kickstarting your next SaaS, marketplace, or internal tool."
       ],
-      tags: ["chatbot", "e-commerce", "smc"]
-   }
+      tags: ["chatbot", "e-commerce", "smc"],
+      services: [
+         { number: 500, symbol: "+", des: "thousands of satisfied users of our products" },
+         { number: 500, symbol: "+", des: "thousands of satisfied users of our products" },
+      ]
+   },
 ];
 
 export const partnerLogos = [
