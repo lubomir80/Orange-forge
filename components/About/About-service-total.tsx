@@ -1,4 +1,4 @@
-import ServiceTotalItem from "./Service-total-item"
+import AboutServiceItem from "./About-service-item"
 
 type ListItem = {
    number: number;
@@ -15,14 +15,14 @@ const list: ListItem[] = [
 ];
 
 
-function ServiceTotal() {
+function AboutServiceTotal() {
 
    return (
       <div className="flex flex-wrap w-full">
          {list.map((item) =>
-            <ServiceTotalItem key={item.des} item={item} />)}
+            <AboutServiceItem key={item.des} item={item} />)}
       </div>
    )
 }
 
-export default ServiceTotal
+export default AboutServiceTotal

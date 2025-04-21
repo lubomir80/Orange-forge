@@ -10,7 +10,7 @@ type ProjectListProps = ProjectListType & {
 
 
 
-function ProjectItem({ title, image, name, tags, index }: ProjectListProps) {
+function WorkProjectItem({ title, image, name, tags, index }: ProjectListProps) {
 
    return (
       <Link
@@ -49,4 +49,4 @@ function ProjectItem({ title, image, name, tags, index }: ProjectListProps) {
    )
 }
 
-export default ProjectItem
+export default WorkProjectItem

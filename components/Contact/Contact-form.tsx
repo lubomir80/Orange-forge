@@ -16,7 +16,7 @@ import { Button } from '../ui/button'
 
 
 
-function PartnerForm() {
+function ContactForm() {
 
    const form = useForm<TContactSchema>({
       resolver: zodResolver(ContactSchema),
@@ -60,4 +60,4 @@ function PartnerForm() {
    )
 }
 
-export default PartnerForm
+export default ContactForm

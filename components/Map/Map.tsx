@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic"
-const MyMap = dynamic(() => import("@/components/Map/Leafletjs-map"), { ssr: false })
+const MyMap = dynamic(() => import("@/components/Map/Map-leafletjs"), { ssr: false })
 
 function Map() {
    return (

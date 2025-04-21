@@ -6,7 +6,7 @@ import 'leaflet/dist/leaflet.css'
 
 
 
-function LeafletjsMap() {
+function MapLeafletJS() {
 
    const myIcon = divIcon({
       className: "my-custom-pin",
@@ -50,4 +50,4 @@ function LeafletjsMap() {
    )
 }
 
-export default LeafletjsMap
+export default MapLeafletJS

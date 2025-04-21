@@ -5,7 +5,7 @@ import 'swiper/css/scrollbar';
 import { ReactElement, SVGProps } from 'react';
 import { Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import CarouselItem from './CarouselItem';
+import AboutCarouselItem from './About-carousel-item';
 
 import Doc from './Icons/Doc';
 import World from './Icons/World';
@@ -33,9 +33,7 @@ const carouselItems: ServiceItem[] = [
 
 
 
-function CarouselBox() {
-
-
+function AboutCarouselBox() {
 
    return (
       <>
@@ -54,7 +52,7 @@ function CarouselBox() {
             >
                {carouselItems.map((item, index) =>
                   <SwiperSlide key={item.title + index}>
-                     <CarouselItem item={item} />
+                     <AboutCarouselItem item={item} />
                   </SwiperSlide>)}
             </Swiper>
          </div>
@@ -62,4 +60,4 @@ function CarouselBox() {
    )
 }
 
-export default CarouselBox
+export default AboutCarouselBox

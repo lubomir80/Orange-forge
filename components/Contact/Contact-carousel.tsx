@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { partnerLogos } from '@/data';
 
 
-function LogoCarousel() {
+function ContactCarousel() {
    const logos = [...partnerLogos, ...partnerLogos, ...partnerLogos]
 
    return (
@@ -21,4 +21,4 @@ function LogoCarousel() {
    )
 }
 
-export default LogoCarousel
+export default ContactCarousel

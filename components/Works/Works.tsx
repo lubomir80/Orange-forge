@@ -1,4 +1,4 @@
-import ProjectBox from "./ProjectBox"
+import WorkProjectBox from "./Work-project-box"
 
 
 function Works() {
@@ -9,9 +9,7 @@ function Works() {
             Some of our best
             <strong className="header-orange"> projects</strong>
          </h2>
-
-         <ProjectBox />
-
+         <WorkProjectBox />
       </section>
    )
 }

@@ -12,7 +12,7 @@ type CarouselItemProps = {
 }
 
 
-function CarouselItem({ item }: CarouselItemProps) {
+function AboutCarouselItem({ item }: CarouselItemProps) {
    return (
       <div>
          <div>{item.img}</div>
@@ -24,4 +24,4 @@ function CarouselItem({ item }: CarouselItemProps) {
    )
 }
 
-export default CarouselItem
+export default AboutCarouselItem

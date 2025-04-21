@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-function CirclesImage() {
+function AboutCirclesImage() {
    return (
       <div className='absolute top-[-140px] right-0 h-[280px] aspect-4/6 overflow-hidden'>
          <Image src="/circles.png" alt='' fill className='object-fill' />
@@ -8,4 +8,4 @@ function CirclesImage() {
    )
 }
 
-export default CirclesImage
+export default AboutCirclesImage

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import BackgroundImg from "@/public/Splines2.png"
-import LogoCarousel from "./Logo-carousel"
-import PartnerForm from "./Partner-form"
+import ContactCarousel from "./Contact-carousel"
+import ContactForm from "./Contact-form"
 
 
 function Contact() {
@@ -14,10 +14,10 @@ function Contact() {
                Will be our
                <strong className="header-orange"> partner</strong>
             </h2>
-            <PartnerForm />
+            <ContactForm />
          </div>
 
-         <LogoCarousel />
+         <ContactCarousel />
       </section>
    )
 }

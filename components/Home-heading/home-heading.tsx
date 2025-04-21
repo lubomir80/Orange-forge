@@ -1,7 +1,7 @@
 
-import HeadingComponent from './heading-component'
-import HeadingTitle from './heading-title'
-import HeadingImage from './heading-image'
+import HeadingComponent from './Heading-component'
+import HeadingTitle from './Heading-title'
+import HeadingImage from './Heading-image'
 
 function HomeHeading() {
    return (
