@@ -1,9 +1,9 @@
 import { motion } from "motion/react"
 import Link from "next/link";
-import HireBtn from "./Hire-btn";
-import Social from "./Social";
-import Language from "./Language";
-import { bounds } from "leaflet";
+import HeaderHireBtn from "./Header-hire-btn";
+import HeaderSocial from "./Header-social";
+import HeaderLanguage from "./Header-language";
+
 
 const navLinks = [
    ["About", "/#about"],
@@ -36,9 +36,9 @@ function HeaderMobileNav({ close }: { close: () => void }) {
                ))}
             </ul>
          </nav>
-         <HireBtn className="mt-16 ml-[-11px]" />
-         <Social className="my-12" />
-         <Language className="ml-[-11px] " />
+         <HeaderHireBtn className="mt-16 ml-[-11px]" close={close} />
+         <HeaderSocial className="my-12" />
+         <HeaderLanguage className="ml-[-11px] " />
 
       </motion.div>
    )

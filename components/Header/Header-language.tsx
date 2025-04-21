@@ -6,9 +6,9 @@ import {
    SelectValue,
 } from "@/components/ui/select"
 
-function Language({ className }: { className?: string }) {
+function HeaderLanguage({ className }: { className?: string }) {
    return (
-      <div className={className}>
+      <div className={`${className} `}>
          <Select>
             <SelectTrigger className="w-[70px]">
                <SelectValue placeholder="en" />
@@ -21,4 +21,4 @@ function Language({ className }: { className?: string }) {
    )
 }
 
-export default Language
+export default HeaderLanguage

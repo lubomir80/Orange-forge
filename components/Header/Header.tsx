@@ -1,15 +1,13 @@
 "use client"
 
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "motion/react"
+import { motion, useMotionValueEvent, useScroll } from "motion/react"
 import { useRef, useState, useEffect } from 'react'
 import Logo from './Logo'
-import HeaderBurger from "./Header-burger"
-import HeaderMobileNav from "./Header-mobile-nav"
-// import HireBtn from './Hire-btn'
-// import Language from './Language'
-// import Menu from './Menu'
-// import Navigation from './Navigation'
-// import Social from './Social'
+import HeaderMobileBox from "./Header-mobile-box"
+import HeaderNavigation from "./Header-navigation"
+import HeaderHireBtn from "./Header-hire-btn"
+import HeaderSocial from "./Header-social"
+import HeaderLanguage from "./Header-language"
 
 
 
@@ -20,6 +18,15 @@ function Header() {
 
    const lastYRef = useRef(0)
    const { scrollY } = useScroll()
+
+   const headerVariants = {
+      hidden: {
+         y: "-100%"
+      },
+      visible: {
+         y: "0%"
+      }
+   }
 
 
    useMotionValueEvent(scrollY, "change", (y) => {
@@ -43,29 +50,23 @@ function Header() {
          document.body.style.overflow = "auto"
    }, [isOpen, setIsOpen])
 
+
    return (
       <motion.header
          animate={isHidden ? "hidden" : "visible"}
          transition={{ duration: "0.2" }}
-         variants={{
-            hidden: {
-               y: "-100%"
-            },
-            visible: {
-               y: "0%"
-            }
-         }}
+         variants={headerVariants}
          className='sticky top-0 left-0 w-full z-50'>
-         <div className={`px-[20px] h-[65px] flex justify-between items-center
+         <div className={`px-[20px] h-[65px] lg:px-[40px] xl:h-[max(6vw,95px)] lg:h-[95px] flex justify-between items-center
             ${isTransparent && !isOpen ? "bg-transparent" : "bg-white"} transition-all`}>
             <Logo close={close} />
 
-            <AnimatePresence>
-               {isOpen ? <HeaderMobileNav close={close} /> : null}
-            </AnimatePresence>
+            <HeaderNavigation />
+            <HeaderHireBtn className="hidden lg:block ml-auto" />
+            <HeaderSocial className="hidden lg:flex ml-[1.2vw]" />
+            <HeaderLanguage className="hidden lg:block ml-[3vw]" />
 
-
-            <HeaderBurger isOpen={isOpen} toggle={toggle} />
+            <HeaderMobileBox isOpen={isOpen} close={close} toggle={toggle} />
          </div>
       </motion.header>
    )
@@ -74,14 +75,3 @@ function Header() {
 export default Header
 
 
-
-
-{/* <div className={`px-[20px] h-[65px]
-            md:h-[95px] md:px-[40px] md:flex md:items-center md:relative`}>
-            <Logo />
-            <Navigation />
-            <HireBtn />
-            <Social />
-            <Language />
-            <Menu toggle={toggle} isOpen={isOpen} />
-         </div> */}

@@ -14,7 +14,7 @@ function HeaderBurger({ isOpen, toggle }: BurgerProps) {
          onClick={toggle}
          whileHover={{ color: "#fe5616" }}
          transition={{ type: "spring" }}
-         className="flex items-center justify-center gap-2 cursor-pointer z-100 ">
+         className="flex items-center justify-center gap-1 cursor-pointer z-100 ">
          Menu
          <div className="w-5 h-5 flex items-center justify-center">
             <span className={`${isOpen ? "opened" : ""} burger-icon`} />

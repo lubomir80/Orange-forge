@@ -8,9 +8,9 @@ const navLinks = [
 ];
 
 
-function Navigation() {
+function HeaderNavigation() {
    return (
-      <nav className="ml-[9vw]">
+      <nav className="hidden ml-[9vw] lg:block xl:text-[18.5px]">
          <ul className="flex space-x-6">
             {navLinks.map(([name, href], index) => (
                <li key={index}>
@@ -24,4 +24,4 @@ function Navigation() {
    )
 }
 
-export default Navigation
+export default HeaderNavigation
