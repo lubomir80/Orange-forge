@@ -9,6 +9,7 @@ function Works() {
             Some of our best
             <strong className="header-orange"> projects</strong>
          </h2>
+
          <WorkProjectBox />
       </section>
    )

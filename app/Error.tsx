@@ -22,7 +22,7 @@ function ErrorPage({ error }: {
       lg:h-[calc(100dvh-95px)] xl:h-[calc(100dvg-max(6vw,95px))]
       flex flex-col items-start justify-center gap-10 min-h-[500px]'>
          <h1 className='text-[32px] lg:text-[64px]'>
-            Sorry, action error!
+            Sorry, some error!
          </h1>
          <p className='uppercase'>
             {error?.message}

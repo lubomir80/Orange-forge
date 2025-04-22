@@ -1,5 +1,6 @@
 "use client"
 
+import { usePathname, useSearchParams } from 'next/navigation';
 import { motion, useMotionValueEvent, useScroll } from "motion/react"
 import { useRef, useState, useEffect } from 'react'
 import Logo from './Logo'
@@ -12,6 +13,9 @@ import HeaderLanguage from "./Header-language"
 
 
 function Header() {
+   const pathname = usePathname();
+   const isProjectPage = pathname.includes("project")
+
    const [isHidden, setIsHidden] = useState(false)
    const [isTransparent, setIsTransparent] = useState(false)
    const [isOpen, setIsOpen] = useState(false)
@@ -61,8 +65,10 @@ function Header() {
          transition={{ duration: "0.2" }}
          variants={headerVariants}
          className='sticky top-0 left-0 w-full z-50'>
-         <div className={`px-[20px] h-[65px] lg:px-[40px] xl:h-[max(6vw,95px)] lg:h-[95px] flex justify-between items-center
-            ${isTransparent && !isOpen ? "bg-transparent" : "bg-white"} transition-all`}>
+         <div className={`px-[20px] h-[65px] lg:px-[40px] xl:h-[max(6vw,95px)] lg:h-[95px] flex justify-between items-center transition-all
+            ${isTransparent && !isOpen ? "bg-transparent" : "bg-white"} 
+            ${isProjectPage && isTransparent && !isOpen && "text-white"}
+            `}>
             <Logo close={close} />
 
             <HeaderNavigation />

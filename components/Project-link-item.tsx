@@ -8,10 +8,7 @@ type ProjectListProps = ProjectListType & {
    index?: number
 };
 
-
-
-function WorkProjectItem({ title, image, name, tags, index }: ProjectListProps) {
-
+function ProjectLinkItem({ title, image, name, tags, index }: ProjectListProps) {
    return (
       <Link
          href={`/project/${name}`}
@@ -20,8 +17,7 @@ function WorkProjectItem({ title, image, name, tags, index }: ProjectListProps) 
          <Image src={image.main} fill alt={`Cabin ${title}`}
             className="object-cover border-r border-primary-800" />
 
-         <div className="top-0 left-0 w-full h-full z-0 p-6 rounded-2xl       overflow-hidden transition-all duration-300 transform
-         scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100">
+         <div className="top-0 left-0 w-full h-full z-0 p-6 rounded-2xl       overflow-hidden transition-all duration-300 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100">
             <Image className='-z-10' src={OrangeBg} alt='Orange bg' fill />
             <div className='flex flex-col justify-between h-full'>
                <div>
@@ -42,4 +38,4 @@ function WorkProjectItem({ title, image, name, tags, index }: ProjectListProps) 
    )
 }
 
-export default WorkProjectItem
+export default ProjectLinkItem

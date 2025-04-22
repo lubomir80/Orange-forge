@@ -1,4 +1,5 @@
-import AboutServiceItem from "./About-service-item"
+import NumberBox from "../Number-box";
+
 
 type ListItem = {
    number: number;
@@ -16,12 +17,13 @@ const list: ListItem[] = [
 
 
 function AboutServiceTotal() {
-
    return (
-      <div className="flex flex-wrap w-full">
-         {list.map((item) =>
-            <AboutServiceItem key={item.des} item={item} />)}
-      </div>
+      <>
+         <NumberBox
+            numbers={list}
+            paragraphClass="font-bold"
+            className="flex flex-wrap w-full" />
+      </>
    )
 }
 

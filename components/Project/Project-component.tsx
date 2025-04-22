@@ -1,33 +1,24 @@
 import { ProjectListType } from '@/types'
+import Image from 'next/image'
 
 
-function ProjectComponent({ paragraphs, additionalInfo, services }: ProjectListType) {
+function ProjectComponent({ paragraphs, image }: ProjectListType) {
    return (
       <>
-         <h2 className="text-[25px] font-bold my-[25px]">
-            {additionalInfo || "Long Title"}
-         </h2>
 
-         {paragraphs.map(par =>
-            <p key={par + "para"} className="my-[25px]">
-               {par}
-            </p>
-         )}
 
-         <div className="max-w-[540px]">
-            <ul className="flex gap-[22px]">
-               {services.map((item, index) =>
-                  <div key={index + item.number}
-                     className="mb-[50px] w-[50%] lg:w-[25%] bg-transparent border-none shadow-nones">
-                     <h2 className="text-[35px] font-bold lg:text-[67.7px]">
-                        {item.number}
-                        <span>{item.symbol}</span>
-                     </h2>
-                     <p className="text-gray-400 max-w-[220px]">{item.des}</p>
-                  </div>
-               )}
-            </ul>
+         <div className='flex flex-wrap gap-5 md:flex-nowrap my-[25px]'>
+            <div className='aspect-square w-[100%] rounded-2xl overflow-hidden relative'>
+               <Image src={image.additional[0]} alt="" fill className="object-cover border-r border-primary-800" />
+            </div>
+            <div className='aspect-square w-[100%] rounded-2xl overflow-hidden relative'>
+               <Image src={image.additional[1]} alt="" fill className="object-cover border-r border-primary-800" />
+            </div>
          </div>
+
+
+
+         <p className='my-[25px]'>{paragraphs[1]}</p>
       </>
    )
 }
