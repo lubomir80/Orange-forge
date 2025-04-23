@@ -186,6 +186,14 @@ body {
       animation: scroll-left 40s linear infinite;
     }
 
+    .swiper-slide{
+      display: -webkit-box !important;
+      -webkit-line-clamp: 8 !important;
+      -webkit-box-orient: vertical !important;
+      overflow: hidden !important;
+    }
+
+
 
 /* BURGER MENU BUTTON */
 

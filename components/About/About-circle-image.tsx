@@ -3,8 +3,11 @@ import Image from 'next/image'
 
 function AboutCircleImage() {
    return (
-      <div className='absolute top-[-77px] left-[-34px] w-full aspect-1/1 overflow-hidden h-[95px] w-full'>
-         <Image src="/circle.png" alt='' width={94} height={94} />
+      <div className='absolute top-0 left-0 w-full'>
+         <div className='absolute top-0 left-0 -translate-x-1/3 -translate-y-1/2 sm:translate-x-[20vw]
+          overflow-hidden aspect-[1/1] w-[max(94px,_12.67%)]'>
+            <Image src="/circle.png" alt='' fill className='object-cover' />
+         </div>
       </div>
    )
 }

@@ -37,7 +37,7 @@ function AboutCarouselBox() {
 
    return (
       <>
-         <div className='relative my-[40px] h-[450px]'>
+         <div className='relative my-[40px] h-[450px] ml-[20px] md:ml-[40px] '>
             <Swiper
                breakpoints={{
                   576: { slidesPerView: 1.2 },
