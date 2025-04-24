@@ -12,6 +12,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { useForm } from 'react-hook-form'
 import { Button } from '../ui/button'
+import FooterTitle from './Footer-title'
 
 function FooterForm() {
 
@@ -32,11 +33,13 @@ function FooterForm() {
 
    return (
       <div className='flex-1'>
-         <h3 className="text-[24px] text-white mb-[15px]">Is the answer to your question missing? Get in touch with us.</h3>
+         <FooterTitle className='text-white lg:mb-[40px]'>
+            Is the answer to your question missing? Get in touch with us.
+         </FooterTitle>
          <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}
-               className='space-y-10'>
-               <div className='w-full relative space-y-10'>
+               className='space-y-10 lg:space-y-18'>
+               <div className='w-full relative space-y-10 lg:space-y-18'>
                   <FormField
                      control={form.control}
                      name="name"
@@ -54,7 +57,7 @@ function FooterForm() {
                         </FormItem>
                      )}
                   />
-                  <div className='space-y-10 sm:space-y-0 sm:flex sm:gap-5 w-full '>
+                  <div className='space-y-10 sm:space-y-0 sm:flex sm:gap-5 w-full lg:gap-12'>
                      <FormField
                         control={form.control}
                         name="email"
@@ -108,7 +111,9 @@ function FooterForm() {
                      )}
                   />
                </div>
-               <Button className='rounded-full '>Hire Us</Button>
+               <Button className='rounded-full lg:text-[22px] lg:px-6 lg:py-7'>
+                  Hire Us
+               </Button>
             </form>
          </Form>
       </div>

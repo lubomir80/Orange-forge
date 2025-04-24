@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import FooterTitle from './Footer-title';
 
 const iconSize = 16
+
 
 const socialLinks = [
    {
@@ -25,7 +27,7 @@ const socialLinks = [
 function FooterSocial() {
    return (
       <div>
-         <h3 className="text-[24px] text-white/50 mb-[10px]">We on social</h3>
+         <FooterTitle className='text-white/50'>We on social</FooterTitle>
          <ul className='flex gap-2 '>
             {socialLinks.map((social) =>
                <li key={social.social} className='group relative'>

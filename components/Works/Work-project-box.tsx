@@ -8,7 +8,7 @@ const projects: ProjectListType[] = projectList
 
 function WorkProjectBox() {
    return (
-      <TwoColumnGrid className='lg:gap-x-6'>
+      <TwoColumnGrid className='xl:gap-x-6'>
          {projects.map((project, index) =>
             <WorkProjectItem key={project.title} {...project} index={index + 1} />)}
       </TwoColumnGrid>

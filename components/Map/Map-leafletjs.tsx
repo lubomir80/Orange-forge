@@ -29,7 +29,7 @@ function MapLeafletJS() {
 
    return (
 
-      <div className='h-full h-full w-full absolute top-0 left-0 z-0'>
+      <div className='h-full w-full absolute top-0 left-0 z-0'>
          <MapContainer
             style={{ height: "100%", width: "100%", position: "relative" }}
             center={[51.505, 10]}

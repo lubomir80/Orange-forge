@@ -1,10 +1,11 @@
+import FooterTitle from "./Footer-title"
 
 
 function FooterOffices() {
    return (
       <div>
-         <h3 className="text-[24px] text-white/50 mb-[10px]">Offices</h3>
-         <div>
+         <FooterTitle className='text-white/50'>Offices</FooterTitle>
+         <div className="lg:text-lg">
             <span>
                <p>Johan Jongkindstraat 358</p>
                <p>1089CK Amsterdam</p>
