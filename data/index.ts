@@ -42,7 +42,7 @@ export const projectList = [
       tags: ["UI/UX Design", "website", "cms"],
       services: [
          { number: 15, symbol: "+", des: "years of expertise" },
-         { number: 15, symbol: "+", des: "years of expertise" },
+         { number: 45, symbol: "+", des: "projects delivered" },
       ]
    },
    {
@@ -63,7 +63,7 @@ export const projectList = [
       ],
       tags: ["cms", "chatbot", "e-commerce"],
       services: [
-         { number: 50, symbol: "+", des: "projects delivered" },
+         { number: 200, symbol: "+", des: "thousands of satisfied users of our products" },
          { number: 50, symbol: "+", des: "projects delivered" },
       ]
    },
@@ -85,8 +85,8 @@ export const projectList = [
       ],
       tags: ["UI/UX Design", "smc", "website"],
       services: [
-         { number: 15, symbol: "%", des: "clients who returned to us for additional services" },
-         { number: 15, symbol: "%", des: "clients who returned to us for additional services" }
+         { number: 15, symbol: "+", des: "years of expertise" },
+         { number: 60, symbol: "%", des: "clients who returned to us for additional services" }
       ]
    },
    {
@@ -108,7 +108,7 @@ export const projectList = [
       tags: ["chatbot", "e-commerce", "smc"],
       services: [
          { number: 500, symbol: "+", des: "thousands of satisfied users of our products" },
-         { number: 500, symbol: "+", des: "thousands of satisfied users of our products" },
+         { number: 60, symbol: "%", des: "clients who returned to us for additional services" },
       ]
    },
 ];

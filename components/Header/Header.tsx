@@ -1,6 +1,6 @@
 "use client"
 
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { motion, useMotionValueEvent, useScroll } from "motion/react"
 import { useRef, useState, useEffect } from 'react'
 import Logo from './Logo'
