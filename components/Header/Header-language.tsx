@@ -8,7 +8,7 @@ import {
 
 function HeaderLanguage({ className }: { className?: string }) {
    return (
-      <div className={`${className} `}>
+      <div className={`${className} cursor-pointer`}>
          <Select>
             <SelectTrigger className="w-[70px]">
                <SelectValue placeholder="en" />

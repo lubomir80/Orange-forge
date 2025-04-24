@@ -2,13 +2,16 @@
 import HeadingComponent from './Heading-component'
 import HeadingTitle from './Heading-title'
 import HeadingImage from './Heading-image'
+import Box from '../Box'
 
 function HomeHeading() {
    return (
-      <section className='px-[20px] md:px-[40px]'>
-         <HeadingImage />
-         <HeadingTitle />
-         <HeadingComponent />
+      <section>
+         <Box>
+            <HeadingImage />
+            <HeadingTitle />
+            <HeadingComponent />
+         </Box>
       </section>
    )
 }

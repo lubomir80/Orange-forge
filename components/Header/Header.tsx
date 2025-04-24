@@ -9,6 +9,7 @@ import HeaderNavigation from "./Header-navigation"
 import HeaderHireBtn from "./Header-hire-btn"
 import HeaderSocial from "./Header-social"
 import HeaderLanguage from "./Header-language"
+import Box from '../Box';
 
 
 
@@ -65,10 +66,10 @@ function Header() {
          transition={{ duration: "0.2" }}
          variants={headerVariants}
          className='sticky top-0 left-0 w-full z-50'>
-         <div className={`px-[20px] h-[65px] lg:px-[40px] xl:h-[max(6vw,95px)] lg:h-[95px] flex justify-between items-center transition-all
+         <Box className={`h-[65px] lg:h-[95px] xl:h-[max(6vw,95px)]  flex justify-between items-center transition-all
             ${isTransparent && !isOpen ? "bg-transparent" : "bg-white"} 
-            ${isProjectPage && isTransparent && !isOpen && "text-white"}
-            `}>
+            ${isProjectPage && isTransparent && !isOpen && "text-white"}`}>
+
             <Logo close={close} />
 
             <HeaderNavigation />
@@ -77,7 +78,7 @@ function Header() {
             <HeaderLanguage className="hidden lg:block ml-[3vw]" />
 
             <HeaderMobileBox isOpen={isOpen} close={close} toggle={toggle} />
-         </div>
+         </Box>
       </motion.header>
    )
 }

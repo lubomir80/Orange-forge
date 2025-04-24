@@ -3,12 +3,15 @@ import { getMarginClass } from '@/utils/helpers';
 import Image from "next/image";
 import Link from "next/link"
 import OrangeBg from "@/public/Projects/orangBG.png"
+import Tags from './Tags';
 
 type ProjectListProps = ProjectListType & {
    index?: number
 };
 
 function ProjectLinkItem({ title, image, name, tags, index }: ProjectListProps) {
+
+
    return (
       <Link
          href={`/project/${name}`}
@@ -17,21 +20,14 @@ function ProjectLinkItem({ title, image, name, tags, index }: ProjectListProps) 
          <Image src={image.main} fill alt={`Cabin ${title}`}
             className="object-cover border-r border-primary-800" />
 
-         <div className="top-0 left-0 w-full h-full z-0 p-6 rounded-2xl       overflow-hidden transition-all duration-300 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100">
+         <div className="top-0 left-0 w-full h-full z-0 p-6 sm:p-12 xl:p-18 rounded-2xl overflow-hidden transition-all duration-300 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100">
             <Image className='-z-10' src={OrangeBg} alt='Orange bg' fill />
-            <div className='flex flex-col justify-between h-full'>
+            <div className='flex flex-col justify-between h-full '>
                <div>
-                  <h4 className='text-[36px] font-bold mb-2'>{name}</h4>
-                  <p>{title}</p>
+                  <h4 className='text-[36px] sm:text-[42px] lg:text-[56px] font-bold mb-2'>{name}</h4>
+                  <p className='md:text-[24px]'>{title}</p>
                </div>
-               <div className='flex gap-2'>
-                  {tags.map(tag => (
-                     <p key={name + tag}
-                        className='font-bold uppercase rounded-full border-2 border-current px-3 py-1'>{tag}
-                     </p>
-                  ))
-                  }
-               </div>
+               <Tags tags={tags} />
             </div>
          </div>
       </Link>

@@ -32,14 +32,14 @@ function FooterForm() {
 
 
    return (
-      <div className='flex-1'>
+      <div className='flex-1 max-w-[550px]'>
          <FooterTitle className='text-white lg:mb-[40px]'>
             Is the answer to your question missing? Get in touch with us.
          </FooterTitle>
          <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}
-               className='space-y-10 lg:space-y-18'>
-               <div className='w-full relative space-y-10 lg:space-y-18'>
+               className='space-y-10  lg:space-y-18'>
+               <div className='w-full relative space-y-10  lg:space-y-18'>
                   <FormField
                      control={form.control}
                      name="name"

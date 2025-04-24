@@ -2,13 +2,14 @@ import { projectList } from "@/data/index"
 
 
 export const getProjectByName = async (projectName: string | undefined) => {
-   try {
-      const project = projectList.find(prj => prj.name === projectName)
-      return project
+   const project = projectList.find(prj => prj.name === projectName)
 
-   } catch {
-      return null
+
+   if (!project) {
+      throw new Error(`"${projectName}"`);
    }
+
+   return project
 }
 
 

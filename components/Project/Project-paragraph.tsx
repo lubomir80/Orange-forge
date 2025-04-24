@@ -6,7 +6,7 @@ type ParagraphProps = {
 
 function ProjectParagraph({ text, className }: ParagraphProps) {
    return (
-      <p className={`${className} my-[25px] max-w-[550px]`}>
+      <p className={`${className} max-w-[550px]`}>
          {text}
       </p>
    )
