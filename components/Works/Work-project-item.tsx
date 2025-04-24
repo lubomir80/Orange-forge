@@ -12,10 +12,12 @@ type ProjectListProps = ProjectListType & {
 
 function WorkProjectItem({ title, image, name, tags, index }: ProjectListProps) {
 
+
+
    return (
       <Link
          href={`/project/${name}`}
-         className={`text-white group block md:mb-6 xl:mb-12 aspect-square bg-amber-600 rounded-2xl overflow-hidden relative ${getMarginClass(index)}`}>
+         className={`text-white group block aspect-square bg-amber-600 rounded-2xl overflow-hidden relative ${getMarginClass(index)}`}>
 
          <Image src={image.main} fill alt={`Cabin ${title}`}
             className="object-cover border-r border-primary-800" />
