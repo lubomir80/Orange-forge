@@ -1,25 +1,25 @@
-import Mercedes1 from "@/public/Projects/4.mercedes/1mercedes.jpg"
-import Mercedes2 from "@/public/Projects/4.mercedes/2mercedes.jpg"
-import Mercedes3 from "@/public/Projects/4.mercedes/3mercedes.jpg"
+import Mercedes1 from "/public/Projects/4.mercedes/1mercedes.jpg"
+import Mercedes2 from "/public/Projects/4.mercedes/2mercedes.jpg"
+import Mercedes3 from "/public/Projects/4.mercedes/3mercedes.jpg"
 
-import BMW1 from "@/public/Projects/2.bmw/1bmw.jpg"
-import BMW2 from "@/public/Projects/2.bmw/2bmw.jpg"
-import BMW3 from "@/public/Projects/2.bmw/3bmw.jpg"
+import BMW1 from "/public/Projects/2.bmw/1bmw.jpg"
+import BMW2 from "/public/Projects/2.bmw/2bmw.jpg"
+import BMW3 from "/public/Projects/2.bmw/3bmw.jpg"
 
-import Audi2 from "@/public/Projects/3.audi/2audi.jpg"
-import Audi3 from "@/public/Projects/3.audi/3audi.jpg"
-import Audi4 from "@/public/Projects/3.audi/4audi.jpg"
+import Audi2 from "/public/Projects/3.audi/2audi.jpg"
+import Audi3 from "/public/Projects/3.audi/3audi.jpg"
+import Audi4 from "/public/Projects/3.audi/4audi.jpg"
 
-import Volvo1 from "@/public/Projects/1.Volvo/1volvo.jpg"
-import Volvo2 from "@/public/Projects/1.Volvo/2volvo.jpg"
-import Volvo3 from "@/public/Projects/1.Volvo/3volvo.png"
+import Volvo1 from "/public/Projects/1.Volvo/1volvo.jpg"
+import Volvo2 from "/public/Projects/1.Volvo/2volvo.jpg"
+import Volvo3 from "/public/Projects/1.Volvo/3volvo.png"
 
 // Partner logos
-import Logo1 from "@/public/Contact/logo1.png"
-import Logo2 from "@/public/Contact/logo2.png"
-import Logo3 from "@/public/Contact/logo3.png"
-import Logo4 from "@/public/Contact/logo4.png"
-import Logo5 from "@/public/Contact/logo5.png"
+import Logo1 from "/public/Contact/logo1.png"
+import Logo2 from "/public/Contact/logo2.png"
+import Logo3 from "/public/Contact/logo3.png"
+import Logo4 from "/public/Contact/logo4.png"
+import Logo5 from "/public/Contact/logo5.png"
 
 
 export const projectList = [
