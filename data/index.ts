@@ -94,10 +94,10 @@ export const projectList = [
       title: "Full Stack Starter Kit",
       desc: "StackNomad is a developer-first boilerplate combining modern frontend, backend, and DevOps tooling.",
       image: {
-         main: Volvo1,
+         main: Audi2,
          additional: [
-            Volvo2,
-            Volvo3
+            Audi4,
+            Audi3
          ]
       },
       additionalInfo: "Perfect for solo founders and remote teams.",
