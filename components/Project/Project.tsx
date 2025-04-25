@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ProjectMainImage from './Project-main-image'
 import Box from '../Box'
 import ProjectDescription from './Project-description'
@@ -7,6 +7,7 @@ import NumberBox from '../Number-box'
 import ProjectAdditionalImages from './Project-additional-images'
 import ProjectNavigation from './Project-navigation'
 import { getNextProject, getProjectByName } from '@/data/project'
+
 
 async function Project({ name }: { name: string }) {
 

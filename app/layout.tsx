@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 
 
 
+
 const geistMono = Geist_Mono({
    variable: "--font-geist-mono",
    subsets: ["latin"],

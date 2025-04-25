@@ -18,7 +18,7 @@ function Header() {
    const isProjectPage = pathname.includes("project")
 
    const [isHidden, setIsHidden] = useState(false)
-   const [isTransparent, setIsTransparent] = useState(false)
+   const [isTransparent, setIsTransparent] = useState(true)
    const [isOpen, setIsOpen] = useState(false)
 
    const lastYRef = useRef(0)

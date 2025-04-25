@@ -12,6 +12,7 @@ export async function generateMetadata({ params }: { params: Params }) {
 }
 
 
+
 async function SingleProjectPage({ params }: { params: Params }) {
    const { name } = await params
 

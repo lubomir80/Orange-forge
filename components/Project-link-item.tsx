@@ -27,7 +27,7 @@ function ProjectLinkItem({ title, image, name, tags, index }: ProjectListProps) 
                   <h4 className='text-[36px] sm:text-[42px] lg:text-[56px] font-bold mb-2'>{name}</h4>
                   <p className='md:text-[24px]'>{title}</p>
                </div>
-               <Tags tags={tags} />
+               <Tags tags={tags} wrap />
             </div>
          </div>
       </Link>
