@@ -1,7 +1,7 @@
-import { motion, useScroll, useTransform } from 'motion/react'
-import { useRef } from 'react'
-import CircleImage from "/public/circle.png"
 import Image from 'next/image'
+import { motion, useScroll, useTransform } from 'motion/react'
+import CircleImage from "/public/Circle.png"
+import { useRef } from 'react'
 
 
 function AboutCircleImage() {

@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'motion/react'
 import { useRef } from 'react'
-import CirclesImage from "/public/circles.png"
+import CirclesImage from "/public/Circles.png"
 import Image from 'next/image'
 
 function AboutCirclesImage() {
