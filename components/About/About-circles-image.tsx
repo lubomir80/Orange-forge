@@ -1,8 +1,9 @@
 import { motion, useScroll, useTransform } from 'motion/react'
 import { useRef } from 'react'
+import CirclesImage from "/public/circles.png"
 import Image from 'next/image'
 
-function CirclesImage() {
+function AboutCirclesImage() {
    const ref = useRef<HTMLDivElement>(null)
 
    const { scrollYProgress } = useScroll({
@@ -18,10 +19,10 @@ function CirclesImage() {
          style={{ top }}
          className='absolute top-0 right-0 w-[200px] sm:w-[max(300px,_36%)] -translate-y-1/2 sm:-translate-y-1/3 aspect-1/1 md:aspect-5/6 overflow-hidden transition-all'>
          <div>
-            <Image src="/circles.png" alt='' fill className='object-fill' />
+            <Image src={CirclesImage} alt='' fill className='object-fill' />
          </div>
       </motion.div>
    )
 }
 
-export default CirclesImage
+export default AboutCirclesImage
