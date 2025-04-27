@@ -12,6 +12,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { useForm } from 'react-hook-form'
 import { Button } from '../ui/button'
+import { toast } from 'sonner'
 import FooterTitle from './Footer-title'
 
 function FooterForm() {
@@ -27,7 +28,14 @@ function FooterForm() {
    })
 
    const onSubmit = (email: TFooterSchema) => {
-      console.log(email);
+      toast(`We will contact with you ${email.name}`, {
+         description: `${email?.email}`,
+         action: {
+            label: "Close",
+            onClick: () => { },
+         },
+      })
+      form.reset()
    }
 
 

@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner"
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import AnimationPage from "@/components/Animation/AnimationPage";
@@ -36,6 +37,7 @@ export default function RootLayout({
                <Header />
                <main>
                   {children}
+                  <Toaster />
                </main>
                <Footer />
             </AnimationPage>

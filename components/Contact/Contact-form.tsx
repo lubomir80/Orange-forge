@@ -1,5 +1,6 @@
 "use client"
 
+import { toast } from "sonner"
 import { ContactSchema, TContactSchema } from '@/schemas'
 import { zodResolver } from "@hookform/resolvers/zod"
 import {
@@ -26,7 +27,14 @@ function ContactForm() {
    })
 
    const onSubmit = (email: TContactSchema) => {
-      console.log(email);
+      toast("We will contact with you", {
+         description: `${email?.email}`,
+         action: {
+            label: "Close",
+            onClick: () => { },
+         },
+      })
+      form.reset()
    }
 
 
