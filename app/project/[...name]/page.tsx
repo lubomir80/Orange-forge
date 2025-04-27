@@ -1,3 +1,4 @@
+import AnimationPage from "@/components/Animation/AnimationPage";
 import Project from "@/components/Project/Project";
 
 
@@ -17,7 +18,9 @@ async function SingleProjectPage({ params }: { params: Params }) {
    const { name } = await params
 
    return (
-      <Project name={name} />
+      <AnimationPage>
+         <Project name={name} />
+      </AnimationPage>
    )
 
 

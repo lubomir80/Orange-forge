@@ -1,4 +1,4 @@
-import AnimationCounter from "./AnimationCounter";
+import AnimationCounter from "./Animation/AnimationCounter";
 
 
 type NumberItem = {
@@ -22,9 +22,6 @@ function NumberBox({ numbers, className, paragraphClass }: NumberBoxProps) {
                className="mb-[50px] w-[50%] lg:w-[25%] bg-transparent border-none shadow-nones">
                <h2 className="text-[35px] font-bold lg:text-[67.7px]">
                   {item.number && <AnimationCounter from={0} to={Number(item.number)} />}
-                  {/* <span>
-                     {item.number}
-                  </span> */}
                   <span>{item.symbol}</span>
                </h2>
                <p className={`${paragraphClass} max-w-[220px]`}>
